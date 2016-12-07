@@ -84,7 +84,7 @@ public class Solution implements Runnable {
                   ta=fromtheke[1];
                   tb=jointheke[1];
                 //  printLineln(ta+"  "+tb);
-                  for(int i=0;i<tblname.length;i++)
+                  for(int i=0;i<nT;i++) //jdi table_a dtabase e na thake tai modified
                   {
                       if(ta.equals(tblname[i])==true)
                       {
@@ -92,7 +92,7 @@ public class Solution implements Runnable {
                           break;
                       }
                   }
-                  for(int i=0;i<tblname.length;i++)
+                  for(int i=0;i<nT;i++)
                   {
                       if(tb.equals(tblname[i])==true)
                       {
@@ -174,7 +174,7 @@ public class Solution implements Runnable {
                   String sa=fromtheke[2]; //Short name
                   String sb=jointheke[2];
                  
-                  for(int i=0;i<tblname.length;i++)
+                  for(int i=0;i<nT;i++)
                   {
                       if(ta.equals(tblname[i])==true)
                       {
@@ -182,7 +182,7 @@ public class Solution implements Runnable {
                           break;
                       }
                   }
-                  for(int i=0;i<tblname.length;i++)
+                  for(int i=0;i<nT;i++)
                   {
                       if(tb.equals(tblname[i])==true)
                       {
@@ -231,7 +231,7 @@ public class Solution implements Runnable {
                           }
                           i++;
                       }
-                      if(selcol[i].equals(sb)==true)
+                      else if(selcol[i].equals(sb)==true)
                       {
                           for(int j=0;j<num[indxb][0];j++)
                           {
